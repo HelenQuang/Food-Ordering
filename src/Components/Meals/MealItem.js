@@ -1,7 +1,7 @@
 import styles from "../../UI/MealItem.module.css";
 import MealItemForm from "./MealItemForm";
 
-const MealItem = ({ name, description, price, image }) => {
+const MealItem = ({ id, name, description, price, image }) => {
   return (
     <li className={styles.meal}>
       <div>
@@ -13,7 +13,7 @@ const MealItem = ({ name, description, price, image }) => {
         <img src={image} alt="Food item" className={styles.img} />
       </div>
       <div>
-        <MealItemForm />
+        <MealItemForm id={id} />
       </div>
     </li>
   );
