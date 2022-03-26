@@ -1,7 +1,7 @@
 import styles from "../../UI/Cart.module.css";
 import Modal from "./Modal";
 
-const Cart = () => {
+const Cart = ({ onHideCart }) => {
   const cartItem = (
     <ul className={styles["cart-items"]}>
       {[{ id: "c1", name: "Sushi", amount: 2, price: 17 }].map((item) => (
@@ -9,8 +9,9 @@ const Cart = () => {
       ))}
     </ul>
   );
+
   return (
-    <Modal>
+    <Modal onHideCart={onHideCart}>
       {cartItem}
 
       <div className={styles.total}>
@@ -19,7 +20,10 @@ const Cart = () => {
       </div>
 
       <div className={styles.actions}>
-        <button className={styles["button--alt"]}>Close</button>
+        <button className={styles["button--alt"]} onClick={onHideCart}>
+          Close
+        </button>
+
         <button className={styles.button}>Order</button>
       </div>
     </Modal>

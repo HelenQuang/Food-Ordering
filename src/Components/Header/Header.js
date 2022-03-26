@@ -4,12 +4,12 @@ import Logo from "../../Assets/omnifood-logo.png";
 import FoodTable from "../../Assets/Food Table.jpg";
 import HeaderButton from "./HeaderButton";
 
-const Header = () => {
+const Header = ({ onShowCart }) => {
   return (
     <Fragment>
       <header className={styles.header}>
         <img src={Logo} alt="OmniFood Logo" className={styles.logo} />
-        <HeaderButton />
+        <HeaderButton onShowCart={onShowCart} />
       </header>
 
       <div className={styles["main-image"]}>
