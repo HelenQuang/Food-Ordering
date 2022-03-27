@@ -19,8 +19,8 @@ const MealItemForm = ({ id, onAddAmountToCart }) => {
       setAmountIsValid(false);
       return;
     }
-    console.log(enteredAmount);
-    // onAddAmountToCart(enteredAmount);
+
+    onAddAmountToCart(enteredAmount);
   };
 
   return (

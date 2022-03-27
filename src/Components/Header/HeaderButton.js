@@ -4,12 +4,11 @@ import { useContext } from "react";
 import CartContext from "../../Store/CartContext";
 
 const HeaderButton = ({ onShowCart }) => {
-  const cartCtx = useContext(CartContext);
-  console.log(cartCtx);
+  const { items } = useContext(CartContext);
 
-  // const numberOfCartItem = cartCtx.items.reduce((curNumber, item) => {
-  //   return curNumber + item.amount;
-  // }, 0);
+  const numberOfCartItem = items.reduce((curNumber, item) => {
+    return curNumber + item.amount;
+  }, 0);
 
   return (
     <button className={styles.button} onClick={onShowCart}>
@@ -17,7 +16,7 @@ const HeaderButton = ({ onShowCart }) => {
         <CartIcon />
       </span>
       <span>Your Cart</span>
-      {/* <span className={styles.badge}>{numberOfCartItem}</span> */}
+      <span className={styles.badge}>{numberOfCartItem}</span>
     </button>
   );
 };
