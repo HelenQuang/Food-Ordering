@@ -7,7 +7,12 @@ const MealItem = ({ id, name, description, price, image }) => {
   const cartContext = useContext(CartContext);
 
   const addAmountToCartHandler = (amount) => {
-    cartContext.addItem({ id: id, name: name, amount: amount, price: price });
+    cartContext.addItem({
+      id: id,
+      name: name,
+      amount: amount,
+      price: price.toFixed(2),
+    });
   };
 
   return (
@@ -15,7 +20,7 @@ const MealItem = ({ id, name, description, price, image }) => {
       <div>
         <h3>{name}</h3>
         <div className={styles.description}>{description}</div>
-        <div className={styles.price}>{`€${price.toFixed(2)}`}</div>
+        <div className={styles.price}>{`€${price}`}</div>
       </div>
       <div>
         <img src={image} alt="Food item" className={styles.img} />
