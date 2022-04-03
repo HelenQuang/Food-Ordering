@@ -5,6 +5,11 @@
   animation: meals-appear 1s ease-out forwards;
 }
 
+.loading {
+  text-align: center;
+  font: inherit;
+}
+
 .meals ul {
   list-style: none;
   margin: 0;
