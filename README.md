@@ -1,6 +1,6 @@
 # Food Ordering App (Small Learning Project built with React)
 
-This is an app where you can select your favorite meal and the amount to add to the cart. You can also adjust the amount in the card before order. Then you fill the order shipping information and send it to backend.
+This is an app where you can select your favorite meal and the amount to add to the cart. You can also adjust the amount in the card before order. Then you fill the order shipping information and submit data to backend.
 
 ## Project Specification
 
