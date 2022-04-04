@@ -1,15 +1,16 @@
 # Food Ordering App (Small Learning Project built with React)
 
-This is an app where you can select your favorite meal and the amount to add to the cart. You can also adjust the amount in the card before order.
+This is an app where you can select your favorite meal and the amount to add to the cart. You can also adjust the amount in the card before order. Then you fill the order shipping information and send it to backend.
 
 ## Project Specification
 
 - Display UI in 3 main components: Header, Meals and Cart
 - Utilize useState, useContext, useEffect, useRef, ReactPortal
+- GET and POST data to [Firebase] via Http
 
 ## DEMO Link
-https://food-ordering-helen.netlify.app/
 
+https://food-ordering-helen.netlify.app/
 
 ![Screenshot 2022-03-28 184626](https://user-images.githubusercontent.com/94285120/160437327-6bc08437-af50-4426-9df4-b1b4a23b3481.png)
 ![Screenshot 2022-03-28 184650](https://user-images.githubusercontent.com/94285120/160437334-e8ec6d5d-fa60-4e0d-9b3f-b5bdd6e7376e.png)
